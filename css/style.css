@@ -12,9 +12,31 @@ html {
 }
 
 /* 
-    GENERAL
+    TUTTO
 */
-.container {
-    max-width: 1000px;
-    margin: 0 auto;
+main {
+    height: 100vh;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: lightcoral;
+    
+    transition: all 2s ease-in-out;
+    /* transition: width background-color .4s ease-in-out 3s; */
+}
+
+.box:hover {
+    width: 400px;
+    background-color: blue;
+}
+
+.box:active {
+    background-color: green;
+    transform: rotate(180deg);
 }
